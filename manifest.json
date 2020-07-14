@@ -1,0 +1,30 @@
+{
+
+	"name": "Theana",
+	"version": "0.1",
+	"manifest_version": 2,
+	"description": "5 minute meditation",
+	"permissions": ["declarativeContent","storage",  "*://*/*"],
+	//permission for all sites: "*://*/*"
+
+  //set the newtab's url
+	"chrome_url_overrides": {                
+		"newtab": "visual/home.html"
+	},
+
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": true
+	},
+
+	"web_accessible_resources": ["jquery-3.4.1.js",
+    "weather.js"],
+
+
+	"icons": {								
+      "16": "images/ensoicon16.png",  				
+      "48": "images/ensoicon48.png",
+      "128": "images/ensoicon128.png"
+    }
+
+}

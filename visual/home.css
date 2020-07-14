@@ -1,0 +1,117 @@
+@font-face {
+	src: url('https://cdn.statically.io/gh/starlord92/mediatate/9faf7eaf/font/apercu/ApercuPro.woff2') format('woff2'),
+         url('https://cdn.statically.io/gh/starlord92/mediatate/9faf7eaf/font/apercu/ApercuPro.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {	
+	font: 1.1em 'apercu';
+}
+
+.weather_page_background {
+	background:#313c47;
+	height: 100%;
+	width: 100%;	
+}
+
+/*========================weather page elements=============================*/
+
+@media (max-width: 400px) {
+	.weather_page_body {
+		display: grid;
+		font: 1.5em 'apercu';
+		color:  #a5abb8; 
+		height: 100%;
+		width: 100%;
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (min-width: 400px) {
+	.weather_page_body {
+		display: grid;
+		font: 1.5em 'apercu';
+		color:  #a5abb8; 
+		height: 100%;
+		width: 100%;
+		grid-template-columns: 0.3fr 1fr 0.3fr;
+		/*background:  #f8f8f8;*/
+	}
+}
+
+@media (min-width: 1200px) {
+	.weather_page_body {
+		display: grid;
+		font: 1.5em 'apercu';
+		color:  #a5abb8; 
+		height: 100%;
+		width: 100%;
+		grid-template-columns: 1fr 750px 1fr;
+	}
+
+}
+
+/*create a white central column enclosing details of the weather page */ 
+.box_size {
+	grid-column-start: 2;
+	background: rgb(246,248,249);
+	margin-top: 80px;
+	border: solid 1px #ebedf2;
+	border-radius: 8px;
+	height: 75%;
+}
+
+
+.user_profile_id_9809403065 {
+	text-align: center;
+	font-size: 20px;
+	color: black;
+	margin-bottom: 10px;
+	margin-top: 30px;
+}
+
+.user_profile_pic_9809403065 {
+	width: 200px; 
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+ }
+
+
+.dropdown {
+	font: 18px 'apercu';
+	/*color: rgb(22,27,37);*/
+
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: 0;
+	/*box-shadow: 0 1px 0 1px rgba(0,0,0,.04);*/
+	border-radius: 5px;
+	border: .5px solid #ebedf2 ;
+
+	-moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+	/*background-color: white;*/
+	cursor: pointer;
+}
+
+	.user_profile_section_show_9809403065 {
+		display: grid;
+		color: #313c47; /*asana deep blue*/
+		/*color: rgb(22,27,37);*/
+		font: 17px 'apercu' ;
+		margin-top: 45px;
+		line-height: 2;	
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+
+
+
